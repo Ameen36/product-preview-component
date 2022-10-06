@@ -1,0 +1,67 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    font: 14px 'montserrat';
+}
+
+h2 {
+    line-height: 1;
+}
+
+.product__card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    height: 65vh;
+    overflow: hidden;
+    width: 550px;
+}
+
+.product__card__image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product__card__body {
+    padding: 25px;
+}
+
+.product__card__body>* {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.product__category {
+    letter-spacing: 4px;
+}
+
+.primary__text {
+    font-family: 'Fraunces';
+}
+
+.product__listprice {
+    color: hsl(158, 36%, 37%);
+}
+
+.purchase__btn {
+    background-color: hsl(158, 36%, 37%);
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+.purchase__btn:hover {
+    background-color: hsl(158, 36%, 17%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 60px 20px !important;
+    }
+
+    .product__card {
+        flex-direction: column;
+        height: auto;
+        overflow: visible;
+        width: 100%;
+    }
+}
